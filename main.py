@@ -44,15 +44,17 @@ with col7:
 
 # Section 3: Financial and Risk Factors
 st.markdown("## 📊 Additional Information")
-col9, col10, col11, col12 = st.columns(4)
+col9, col10, col11, col12,col13 = st.columns(5)
 with col9:
     age = st.slider("Age", 18, 100, 30)
 with col10:
     number_of_dependants = st.slider("Dependents", 0, 10, 1)
 with col11:
-    income_lakhs = st.number_input("Income (₹ Lakhs)", min_value=0.0, step=0.1, value=5.0)
-with col12:
     genetical_risk = st.slider("Genetical Risk", 0.0, 1.0, 0.3, step=0.01)
+with col12:
+        income_lakhs = st.number_input("Income (₹ Lakhs)", min_value=0.0, step=0.1, value=5.0)
+with col13:
+    insurance_plan = st.selectbox("Insurance Plan", ['Bronze', 'Silver', 'Gold'])
 
 # Divider
 st.markdown("---")
@@ -70,6 +72,7 @@ if st.button("🔍 Predict Insurance Plan"):
         'Age': age,
         'Number of Dependants': number_of_dependants,
         'Income in Lakhs': income_lakhs,
+        'Insurance Plan':insurance_plan,
         'Genetical Risk': genetical_risk
     }
 
