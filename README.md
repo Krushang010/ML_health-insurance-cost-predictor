@@ -5,6 +5,8 @@ Use this interactive tool to estimate your health insurance premium based on you
 👉 https://my-health-insurance-cost-predictor.streamlit.app/
 
 📌 Project Highlights
+
+
 🎯 Goal: Predict suitable insurance premium based on user profile
 
 🧠 Model Type: Regression using LinearRegression
@@ -24,13 +26,13 @@ Financial data (income, dependents, insurance plan level)
 Genetic risk factor slider
 
 💡 Dual-Model Strategy for Age Segmentation
-We noticed that health insurance dynamics significantly differ between younger individuals and adults. To improve accuracy, we trained and deployed two separate models:
+I noticed that health insurance dynamics significantly differ between younger individuals and adults. To improve accuracy, I trained and deployed two separate models:
 
 🔹 model_young → For users aged 25 or below
 
 🔸 model_Rest → For users aged above 25
 
-This segmentation allowed us to capture distinct patterns and tailor predictions more effectively for each age group. The Streamlit app auto-selects the appropriate model based on user input.
+This segmentation allowed me to capture distinct patterns and tailor predictions more effectively for each age group. The Streamlit app auto-selects the appropriate model based on user input.
 
 
 ## 🧰 Tech Stack
@@ -63,13 +65,6 @@ This segmentation allowed us to capture distinct patterns and tailor predictions
 3. **Run the Streamlit app:**
    ```bash
    streamlit run app.py
-
-
-
-
-
-
-
 
 
 📦 Model Development Summary
