@@ -13,7 +13,7 @@ Use this interactive tool to estimate your health insurance premium based on you
 
 🧪 Toolkit: Python, Scikit-Learn, Pandas, Streamlit, Joblib
 
-🌐 Frontend: Streamlit-based intuitive UI with dark theme
+🌐 Frontend: Streamlit-based intuitive UI
 
 📊 Key Features:
 
