@@ -30,7 +30,7 @@ col4, col5, col6 = st.columns(3)
 with col4:
     bmi_category = st.selectbox("BMI Category", ['Normal', 'Obesity', 'Overweight', 'Underweight'])
 with col5:
-    smoking_status = st.selectbox("Smoking Status", ['No Smoking', 'Regular', 'Occasional', 'Does Not Smoke', 'Not Smoking', 'Smoking=0'])
+    smoking_status = st.selectbox("Smoking Status", ['No Smoking', 'Regular', 'Occasional'])
 with col6:
     employment_status = st.selectbox("Employment Status", ['Salaried', 'Self-Employed', 'Freelancer'])
 
@@ -49,7 +49,7 @@ with col9:
     age = st.slider("Age", 18, 100, 30)
 with col10:
     number_of_dependants = st.slider("Dependents", 0, 10, 1)
-with col11:
+with col11  :
     genetical_risk = st.slider("Genetical Risk", 0.0, 1.0, 0.3, step=0.01)
 with col12:
         income_lakhs = st.number_input("Income (₹ Lakhs)", min_value=0.0, step=0.1, value=5.0)
